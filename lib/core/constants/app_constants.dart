@@ -1,5 +1,27 @@
-/// Application-wide constants
-/// Centralized configuration for maintainability
+/// Application-wide constants for consistent UI/UX.
+///
+/// This class centralizes all magic numbers and configuration values
+/// to ensure consistency across the application and ease maintenance.
+///
+/// ## Categories
+/// - **Spacing**: Consistent padding and margins (4px to 48px scale)
+/// - **Border Radius**: Rounded corners (8px to 24px scale)
+/// - **Icon Sizes**: Standardized icon dimensions
+/// - **Touch Targets**: WCAG-compliant minimum sizes (44px+)
+/// - **Animation Durations**: Consistent timing for animations
+/// - **Layout**: Navigation, cards, headers, grids
+///
+/// ## Usage
+/// ```dart
+/// Padding(
+///   padding: EdgeInsets.all(AppConstants.spacingMd),
+///   child: Container(
+///     decoration: BoxDecoration(
+///       borderRadius: BorderRadius.circular(AppConstants.radiusLg),
+///     ),
+///   ),
+/// )
+/// ```
 class AppConstants {
   AppConstants._();
 
