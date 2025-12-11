@@ -7,9 +7,9 @@ import '../../core/theme/app_colors.dart';
 /// Enterprise-grade design with proper touch targets
 class AppBottomNavBar extends StatelessWidget {
   const AppBottomNavBar({
-    super.key,
     required this.currentIndex,
     required this.onTap,
+    super.key,
     this.onChatTap,
   });
 
@@ -28,7 +28,7 @@ class AppBottomNavBar extends StatelessWidget {
       height: AppConstants.bottomNavHeight + MediaQuery.paddingOf(context).bottom,
       decoration: BoxDecoration(
         color: bgColor,
-        border: Border(top: BorderSide(color: borderColor, width: 1)),
+        border: Border(top: BorderSide(color: borderColor)),
       ),
       child: SafeArea(
         top: false,

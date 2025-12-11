@@ -5,8 +5,8 @@ import '../../core/constants/app_constants.dart';
 /// Follows enterprise design system standards
 class AppCard extends StatelessWidget {
   const AppCard({
-    super.key,
     required this.child,
+    super.key,
     this.padding,
     this.margin,
     this.onTap,
@@ -35,12 +35,12 @@ class AppCard extends StatelessWidget {
         (isDark ? const Color(0xFF3F3F46) : const Color(0xFFE4E4E7));
     final cardRadius = borderRadius ?? AppConstants.radiusLg;
 
-    Widget card = Container(
+    final card = Container(
       margin: margin,
       decoration: BoxDecoration(
         color: cardColor,
         borderRadius: BorderRadius.circular(cardRadius),
-        border: Border.all(color: cardBorderColor, width: 1),
+        border: Border.all(color: cardBorderColor),
         boxShadow: elevation != null && elevation! > 0
             ? [
                 BoxShadow(

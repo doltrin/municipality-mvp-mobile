@@ -268,7 +268,7 @@ class _WeatherCard extends StatelessWidget {
                 top: BorderSide(color: Colors.white.withValues(alpha: 0.2)),
               ),
             ),
-            child: Row(
+            child: const Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 _WeatherStat(icon: LucideIcons.droplets, value: '45%', label: 'Humidity'),

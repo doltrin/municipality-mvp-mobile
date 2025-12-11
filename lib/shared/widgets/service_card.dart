@@ -6,10 +6,10 @@ import '../../core/theme/app_colors.dart';
 /// Consistent styling with icon, label, and tap feedback
 class ServiceCard extends StatelessWidget {
   const ServiceCard({
-    super.key,
     required this.label,
     required this.icon,
     required this.onTap,
+    super.key,
     this.color,
     this.backgroundColor,
   });
@@ -41,7 +41,7 @@ class ServiceCard extends StatelessWidget {
           padding: const EdgeInsets.all(AppConstants.spacingMd),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(AppConstants.radiusLg),
-            border: Border.all(color: borderColor, width: 1),
+            border: Border.all(color: borderColor),
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,

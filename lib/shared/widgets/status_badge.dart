@@ -8,8 +8,8 @@ enum StatusType { pending, inProgress, completed, cancelled, scheduled }
 
 class StatusBadge extends StatelessWidget {
   const StatusBadge({
-    super.key,
     required this.status,
+    super.key,
     this.label,
   });
 

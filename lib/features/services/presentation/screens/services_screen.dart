@@ -24,7 +24,7 @@ class _ServicesScreenState extends State<ServicesScreen> {
     'Community',
   ];
 
-  final List<_ServiceItem> _services = [
+  final List<_ServiceItem> _services = const [
     _ServiceItem('Birth Certificate', LucideIcons.baby, AppColors.categoryCertificates, 'Documents'),
     _ServiceItem('Marriage Certificate', LucideIcons.heart, AppColors.categoryCertificates, 'Documents'),
     _ServiceItem('ID Documents', LucideIcons.creditCard, AppColors.categoryCertificates, 'Documents'),
