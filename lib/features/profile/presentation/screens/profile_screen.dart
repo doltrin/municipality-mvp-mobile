@@ -84,7 +84,7 @@ class ProfileScreen extends StatelessWidget {
                 icon: LucideIcons.bell,
                 label: 'Notifications',
                 onTap: () {},
-                trailing: _NotificationBadge(count: 3),
+                trailing: const _NotificationBadge(count: 3),
               ),
               _MenuItem(
                 icon: LucideIcons.shield,
@@ -228,7 +228,7 @@ class _ProfileHeader extends StatelessWidget {
                         : AppColors.successLight,
                     borderRadius: BorderRadius.circular(AppConstants.radiusFull),
                   ),
-                  child: Row(
+                  child: const Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Icon(
@@ -236,7 +236,7 @@ class _ProfileHeader extends StatelessWidget {
                         size: 14,
                         color: AppColors.success,
                       ),
-                      const SizedBox(width: 4),
+                      SizedBox(width: 4),
                       Text(
                         'Verified Citizen',
                         style: TextStyle(

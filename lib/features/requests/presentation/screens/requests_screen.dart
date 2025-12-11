@@ -81,7 +81,7 @@ class _RequestsScreenState extends State<RequestsScreen> {
           Expanded(
             child: ListView(
               padding: const EdgeInsets.all(AppConstants.spacingMd),
-              children: [
+              children: const [
                 _RequestCard(
                   id: 'REQ-2024-1234',
                   title: 'Street Light Repair',
@@ -205,7 +205,7 @@ class _RequestCard extends StatelessWidget {
                             ),
                             child: Text(
                               category,
-                              style: TextStyle(
+                              style: const TextStyle(
                                 color: AppColors.accent,
                                 fontSize: 10,
                                 fontWeight: FontWeight.w600,

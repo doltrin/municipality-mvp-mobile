@@ -26,7 +26,7 @@ class NewsScreen extends StatelessWidget {
         padding: const EdgeInsets.all(AppConstants.spacingMd),
         children: [
           // Featured News
-          _FeaturedNewsCard(
+          const _FeaturedNewsCard(
             title: 'New Metro Line Opening',
             summary: 'The new metro line connecting Piraeus to the northern suburbs will open next month.',
             imageUrl: 'https://images.unsplash.com/photo-1565043666747-69f6646db940?w=800',
@@ -37,7 +37,7 @@ class NewsScreen extends StatelessWidget {
           const SizedBox(height: AppConstants.spacingMd),
 
           // Urgent Alert
-          _AlertCard(
+          const _AlertCard(
             title: 'Water Supply Interruption',
             message: 'Scheduled maintenance on Dec 15th, 08:00-14:00. Areas: Kolonaki, Exarchia.',
             type: AlertType.warning,
@@ -53,25 +53,25 @@ class NewsScreen extends StatelessWidget {
           ),
           const SizedBox(height: AppConstants.spacingSm),
 
-          _NewsListItem(
+          const _NewsListItem(
             title: 'Free Parking During Holidays',
             category: 'Parking',
             date: '3 hours ago',
             imageUrl: 'https://images.unsplash.com/photo-1506521781263-d8422e82f27a?w=400',
           ),
-          _NewsListItem(
+          const _NewsListItem(
             title: 'New Recycling Program Launch',
             category: 'Environment',
             date: '5 hours ago',
             imageUrl: 'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=400',
           ),
-          _NewsListItem(
+          const _NewsListItem(
             title: 'Cultural Festival This Weekend',
             category: 'Events',
             date: 'Yesterday',
             imageUrl: 'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=400',
           ),
-          _NewsListItem(
+          const _NewsListItem(
             title: 'Road Works on Main Avenue',
             category: 'Traffic',
             date: '2 days ago',
@@ -339,7 +339,7 @@ class _NewsListItem extends StatelessWidget {
                     ),
                     child: Text(
                       category,
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: AppColors.accent,
                         fontSize: 10,
                         fontWeight: FontWeight.w600,

@@ -359,7 +359,7 @@ class _SectionHeader extends StatelessWidget {
             ),
             child: Text(
               actionLabel!,
-              style: TextStyle(
+              style: const TextStyle(
                 color: AppColors.accent,
                 fontSize: 13,
                 fontWeight: FontWeight.w600,

@@ -74,7 +74,7 @@ class WalletScreen extends StatelessWidget {
           ),
           const SizedBox(height: AppConstants.spacingSm),
 
-          _TransactionItem(
+          const _TransactionItem(
             title: 'Parking Payment',
             subtitle: 'Smart Parking - Syntagma',
             amount: '-€3.50',
@@ -82,7 +82,7 @@ class WalletScreen extends StatelessWidget {
             icon: LucideIcons.car,
             isExpense: true,
           ),
-          _TransactionItem(
+          const _TransactionItem(
             title: 'Points Earned',
             subtitle: 'Recycling Reward',
             amount: '+50 pts',
@@ -90,7 +90,7 @@ class WalletScreen extends StatelessWidget {
             icon: LucideIcons.recycle,
             isExpense: false,
           ),
-          _TransactionItem(
+          const _TransactionItem(
             title: 'Water Bill',
             subtitle: 'Monthly payment',
             amount: '-€28.50',
@@ -98,7 +98,7 @@ class WalletScreen extends StatelessWidget {
             icon: LucideIcons.droplets,
             isExpense: true,
           ),
-          _TransactionItem(
+          const _TransactionItem(
             title: 'Wallet Top-up',
             subtitle: 'Credit Card ****4521',
             amount: '+€50.00',
@@ -144,11 +144,11 @@ class _BalanceCard extends StatelessWidget {
                   color: Colors.white.withValues(alpha: 0.2),
                   borderRadius: BorderRadius.circular(AppConstants.radiusFull),
                 ),
-                child: Row(
+                child: const Row(
                   children: [
                     Icon(LucideIcons.shield, color: Colors.white, size: 14),
-                    const SizedBox(width: 4),
-                    const Text(
+                    SizedBox(width: 4),
+                    Text(
                       'Verified',
                       style: TextStyle(
                         color: Colors.white,
@@ -177,11 +177,11 @@ class _BalanceCard extends StatelessWidget {
               color: Colors.white.withValues(alpha: 0.15),
               borderRadius: BorderRadius.circular(AppConstants.radiusMd),
             ),
-            child: Row(
+            child: const Row(
               children: [
                 Icon(LucideIcons.creditCard, color: Colors.white, size: 20),
-                const SizedBox(width: 12),
-                const Expanded(
+                SizedBox(width: 12),
+                Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
